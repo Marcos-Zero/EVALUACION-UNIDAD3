@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario 1</title>
+  <link rel="stylesheet" href="/static/CSS/estilos.css">
+</head>
+<body class="form__body1">
+    <form method="post" class="form__form1">
+        <h2>Formulario de Notas</h2>
+        <p class="form__p1">Nota 1:</p>
+        <input type="text" class="form__boton1" name="nota1"><br>
+
+        <p class="form__p1">Nota 2:</p>
+        <input type="text" class="form__boton1" name="nota2"><br>
+
+        <p class="form__p1">Nota 3:</p>
+        <input type="text" class="form__boton1" name="nota3"><br>
+
+        <p class="form__p1">Asistencia (%):</p>
+        <input type="text" class="form__boton1" name="asistencia"><br>
+
+        <input type="submit" class="form__submit2">
+
+        <p>{{ promedio }}</p>
+        <p>{% if aprobado %}Aprobado{% else %}Reprobado{% endif %}</p>
+    </form>
+</body>
+</html>
